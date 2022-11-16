@@ -12,8 +12,8 @@
     <!--BootNavbar CSS-->
     <link rel="stylesheet" href="css/bootnavbar.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!--Medeia Scrren-->
-    <link rel="stylesheet" media="screen" href="assets/css/media.css">
+     <!--Medeia Scrren-->
+     <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
     <!--Aos animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--custom css-->
@@ -133,7 +133,7 @@
     }
     #artist
     {
-        background:url("assets/banner/artist.gif");
+        background:url("assets/banner/tech.gif");
         background-size: cover;
         background-position: center;
         background-repeat:no-repeat;
@@ -188,7 +188,22 @@
 	 border: 1px solid #ddd;
 	 background-color: #ededed;
 }
-
+#icon-size
+{
+    font-size: 35px;
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    color: #ffffff;
+}
+#icon-size1
+{
+    font-size: 35px;
+    position: absolute;
+    left: 25px;
+    top: 132px;
+    color: #ffffff;
+}
   </style>
   <body>
    <?php include_once "header.php";?>
@@ -206,7 +221,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center pt-5">
-                        <h3 style="font-weight: 800;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">Artist</h3>
+                        <h3 style="font-weight: 800;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">Technitions</h3>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
                     </div>
@@ -292,9 +307,6 @@
                                     <div class="d-flex">
                                         <span class="span-2">Instgram Link</span> <span class="muted-4"><?php echo $instagramlink; ?></span>
                                     </div>
-                                    <div class="d-flex ">
-                                        <button id="btn-sm" type="button" class="btn btn-outline-danger btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> Appointment</button>
-                                    </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="pt-5">
@@ -311,94 +323,18 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div style="background: #ff5b00;" class="appointment">
-                        <h6 class="text-white">MAKE AN APPOINTMENT</h6>
+                    <div style="background:#28a745;border-radius: 25px;" class="appointment">
+                        <h6 class="text-white">SHARE YOUR FRIENDS</h6>
                     </div>
-                    <div class="d-flex pt-5" style="box-shadow:0 20px 40px rgb(0 0 0 / 10%);">
-                        <form class="p-3">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name*">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group">
-                                <select class="custom-select" id="inputGroupSelect03">
-                                    <option value="1">9.00 AM</option>
-                                    <option value="2">9.50 AM</option>
-                                    <option value="3">11.00 AM</option>
-                                    <option value="2">11.50 AM</option>
-                                    <option value="3">12.50 AM</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="date" class="form-control" id="formGroupExampleInput">
-                            </div>
-                            <div class="form-group">
-                                <div id="btn--3">
-                                    <a  href="#"     style="color: #ebebeb;text-decoration: none;" >SEND REQUEST</a>
-                                </div>
-                            </div>
-                        </form>
+                    <div id="icon-size">
+                      <i class="fa fa-whatsapp" aria-hidden="true" ></i>
                     </div>
 
-                    <div style="background: #ff5b00;" class="appointment">
-                        <h6 class="text-white">TOP RATED ARTIST</h6>
+                    <div style="background:#0062cc;border-radius: 25px;" class="appointment mt-5">
+                        <h6 class="text-white">SHARE YOUR FRIENDS</h6>
                     </div>
-                    <div class="pt-5" style="box-shadow:0 20px 40px rgb(0 0 0 / 10%);">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="assets/img/oldage/mother.jpg" class="img--10">
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="head-1 pt-3 pr-3">D.Anu Kottur</h6>
-                            <p  class="para--1 ">20 years of experience</p>
-                            <i class="fa fa-star pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="assets/img/oldage/mother.jpg" class="img--10">
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="head-1 pt-3 pr-3">D.Anu Kottur</h6>
-                            <p  class="para--1 ">20 years of experience</p>
-                            <i class="fa fa-star pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="assets/img/oldage/mother.jpg" class="img--10">
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="head-1 pt-3 pr-3">D.Anu Kottur</h6>
-                            <p  class="para--1 ">20 years of experience</p>
-                            <i class="fa fa-star pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="assets/img/oldage/mother.jpg" class="img--10">
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="head-1 pt-3 pr-3">D.Anu Kottur</h6>
-                            <p  class="para--1 ">20 years of experience</p>
-                            <i class="fa fa-star pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="assets/img/oldage/mother.jpg" class="img--10">
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="head-1 pt-3 pr-3">D.Anu Kottur</h6>
-                            <p  class="para--1 ">20 years of experience</p>
-                            <i class="fa fa-star pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i><i class="fa fa-star  pr-1" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    
-                    </div>
-                 
+                    <div id="icon-size1">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
                     </div>
                 </div>
            </div>

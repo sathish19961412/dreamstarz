@@ -74,15 +74,34 @@
        background-repeat: no-repeat;
        
      }
+     .banner-8
+     {
+       background:url('assets/img/banner/banner-8.png');
+       background-size:cover;
+       background-position:center;
+       background-repeat: no-repeat;
+     }
+     .banner-9
+     {
+       background:url('assets/img/banner/banner-9.png');
+       background-size:cover;
+       background-position:center;
+       background-repeat: no-repeat;
+     }
   </style>
 <body>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active banner-1 banner--0">
+    <div class="carousel-item  active banner-1 banner--0">
       
     </div>
-    <div class="carousel-item banner-2 banner--0">
+    <div class="carousel-item banner-9 banner--0">
+      
+    </div> <div class="carousel-item banner-2 banner--0   ">
      
+    </div>
+    <div class="carousel-item  banner-8 banner--0">
+      
     </div>
     <div class="carousel-item banner-3 banner--0">
     

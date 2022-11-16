@@ -11,7 +11,7 @@
 	//define index of column
 	$columns = array( 
 		0 =>'id',
-		1 =>'name', 
+		1 =>'name',
 		2 => 'age',
 		3 => 'members',
 		4 => 'gender',

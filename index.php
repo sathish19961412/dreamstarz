@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/bootnavbar.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!--Medeia Scrren-->
-    <link rel="stylesheet" media="screen" href="assets/css/media.css">
+    <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
     <!--Aos animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--custom css-->
@@ -90,10 +90,7 @@
     }
     #model-1
     {
-        margin-top: 100px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background:#ebebeb;
+        padding-bottom: 50px;
     }
     .img-1
     {
@@ -132,12 +129,65 @@
     {
         font-size:28px;
     }
+    #price
+    {
+        font-size:18px;
+        font-weight:600;
+    }
+    .logo
+    {
+        margin-top: -62px;
+    }
+    #talent
+    {
+        background: #ebebeb;
+        padding-bottom: 5%;
+    }
+    #talent-1
+    {
+        padding-top: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+/* Scroller styling */
+.scroller 
+{
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  font-size: 52px;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
   
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+  100%{
+    top: -3.6em;
+  }
+}
+
   </style>
   <body>
    <?php include_once "header.php";?>
    <?php include_once "slider.php"; ?>
-   <section>
+   <section id="talent">
        <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -145,7 +195,9 @@
                         <h3 style="font-weight: 800;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">FEATURED TALENTS</h3>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-                        <p class="text-center text-muted" style="padding-top:30px;">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet.</p>
+                        <p class="text-center"  style="padding-top:30px;" id="talent-1">
+                           The Featured talents can help you find the right talented one’s that you need. Also, the following features helps to identify and attract new talent, and gain insight on competitors. Talent implies recognizing person’s inherent skills, traits, personality, realising and guiding untapped potential in people and offering him a suitable role.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -156,27 +208,20 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Neymar</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
-                                <img class="profile" width="100%" src="assets/img/images/model.jpeg" alt="">
+                                <img class="profile" width="100%" src="assets/img/images/images1.jpg" alt="">
                             </div>
                             <div class="back from-left">
-                                <h4>Neymar</h4>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
-                                <!-- <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                </ul> -->
+                                <h4>&nbsp;</h4>
+                                <p class="des">&nbsp;</p>
                             </div>
                             </div>
                         </div>
@@ -187,22 +232,20 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Veeuya</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
-                                <img class="profile" width="100%" src="assets/img/images/child-female-model.jpg" alt="">
+                                <img class="profile" width="100%" src="assets/img/images/images2.jpg" alt="">
                             </div>
                             <div class="back from-left">
-                                <h2>Veeuya</h2>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
+                                <h2>&nbsp;</h2>
+                                <p class="des">&nbsp;</p>
                                 <!-- <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -218,23 +261,21 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Katelin</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
-                                <img class="profile" width="100%" src="assets/img/images/model-3.jpg" alt="">
+                                <img class="profile" width="100%" src="assets/img/images/images3.jpg" alt="">
                                
                             </div>
                             <div class="back from-left">
-                                <h2>Katelin</h2>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
+                                <h2>&nbsp;</h2>
+                                <p class="des">&nbsp;</p>
                                 <!-- <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -252,27 +293,59 @@
        <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                   <div>
-                       <img src="assets/img/model.png" class="img-1" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                   <div id="dream-startz">
+                        <a class="navbar-brand" href="index.php" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"> 
+                            <img  id="logo-fontfamilly"  src="assets/img/logo.jpg" alt="logo" class="logo">
+                        </a>
                    </div>
                 </div>
                 <div class="col-md-8">
                     <div class=" pt-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-                        <h3 style="font-weight: 800;">DO YOU WANT TO BE A MODEL?</h3>
+                        <h3 style="font-weight: 800;">
+                          DO YOU WANT TO BE A 
+                        <div class="scroller">
+                            <span style="font-weight: 800;">
+                            ACTRESS<br/>
+                            TECHNICIANS<br/>
+                            OLDAGE<br/>
+                            MODELS<br/>
+                            </span>
+                        </div>
+                        </h3>
                         <div class="line-3"></div>
                         <div class="line-4"></div>
-                        <p class="text-muted" align="justify" style="padding-top:32px ;">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren, no sea takimata 
-                            sanctus est Lorem ipsum dolor sit amet.
-                        </p>
-
-                        <p class="pt-2 text-muted" align="justify">
-                        Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        </p>
-                        <div >
-                            <a href="#" class="button--1">WANT TO BECOME A MODEL</a>
+                        <div>
+                            <a href="#" class="button--1" data-toggle="modal" data-target="#exampleModalCenter" >FREE REGISTER</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </section>
+   <section id="next-addition">
+       <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center pt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+                        <h3 style="font-weight: 800;" class="text-white">NEXT ADDITION</h3>
+                        <div class="line-1"></div>
+                        <marquee width="30%" direction="right" height="50px"><h4 class="text-center " style="padding-top:0px;color:white;">Chennai,Coimbatore,Trichy,Salem,Tirunelveli,Erode,Madurai,Ramanathapuram,Krishnagiri,Nagercoil</h4></marquee>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center ">
+                        <h1 style="color:#ff5b00;"><span class="text-white">2023</span> Next Addition  </h1>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                        <h3 class="text-white">First 250 <span style="color:#ff5b00;" class="font-weight-bold">Register Only</span></h3>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="#" style="text-decoration:none;" class="bg-success p-2 text-white font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter" >FREE REGISTER</a>
                     </div>
                 </div>
             </div>
@@ -282,11 +355,11 @@
        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center pt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-                        <h3 style="font-weight: 800;">TOP RATED MODELS</h3>
+                    <div class="pt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+                        <h3 style="font-weight: 800;" class="text-center">TOP RATED MODELS</h3>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-                        <p class="text-center text-muted" style="padding-top:30px;">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet.</p>
+                        <p class="" style="padding-top:30px;" id="talent-1">For a top rated model, distinct features are needed to pick a right talent. This highlights a few celebrity models that are more known for other careers like acting, singing or politics. Explore to discover their strengths and interests. While considering hiring, they need to identify potential talent and groom them. The most important aspects of talent management are talent acquisition and talent retention.</p>
                     </div>
                 </div>
             </div>
@@ -297,22 +370,20 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Neymar</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
                                 <img class="profile" style="width:100%;height:auto;" src="assets/img/images/model-4.jpg" alt="">
                             </div>
                             <div class="back from-left">
-                                <h4>Neymar</h4>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
+                                <h4>&nbsp;</h4>
+                                <p class="des">&nbsp;</p>
                                 <!-- <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -328,22 +399,20 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Veeuya</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
                                 <img class="profile" style="width:100%;height:auto;" src="assets/img/images/model-5.jpg" alt="">
                             </div>
                             <div class="back from-left">
-                                <h4>Veeuya</h4>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
+                                <h4>&nbsp;</h4>
+                                <p class="des">&nbsp;</p>
                                 <!-- <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -359,23 +428,21 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Katelin</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
                                 <img class="profile" style="width:100%;height:auto;" src="assets/img/images/model-6.jpg" alt="">
                                
                             </div>
                             <div class="back from-left">
-                                <h4>Katelin</h4>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
+                                <h4>&nbsp;</h4>
+                                <p class="des">&nbsp;</p>
                                 <!-- <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -391,22 +458,20 @@
                         <div class="card">
                             <div class="content">
                             <div class="absoloute-1">
-                                <h6 class="text-white">$15/Hourly</h6>
+                                <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="absoloute-2">
-                                <span class="text-white" style="font-size:12px;">FEATURED</span>
+                                <span class="text-white" style="font-size:12px;">&nbsp;</span>
                             </div>
                             <div class="absoloute-3">
-                                    <h6 class="text-white">Veeuya</h6>
+                                    <h6 class="text-white">&nbsp;</h6>
                             </div>
                             <div class="front">
                                 <img class="profile" style="width:100%;height:auto;" src="assets/img/images/model-7.jpg" alt="">
                             </div>
                             <div class="back from-left">
-                                <h4>Veeuya</h4>
-                                <p class="des">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                </p>
+                                <h4>&nbsp;</h4>
+                                <p class="des">&nbsp;</p>
                                 <!-- <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -424,11 +489,16 @@
        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center pt-2"    >
-                        <h3 style="font-weight:800;padding-top:30px;color:white;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">SHINESTARZ BEST SERVICES</h3>
+                    <div class="pt-2"    >
+                        <h3 class="text-center" style="font-weight:800;padding-top:30px;color:white;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">DREAMSTARZ BEST SERVICES</h3>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-                        <p class=" text-center" style="color:white;padding-top:30px;" >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet.</p>
+                        <p class="" style="color:white;padding-top:30px;" >
+                            From sources and facts, Modeling agencies scout for new talent, counsel models to increase their marketability and promote models to clients. 
+                            Modeling agencies have the appeal of glamour – it’s easy to picture flashing cameras, elegant clothing and beautiful models prowling a sleek catwalk. 
+                            Therefore, Modeling helps to satisfy the needs of many different kinds of clients, including print, fashion shows, television and live demonstrations. 
+                            Media sources reveal that the market is projected to grow fast in the near future.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -442,13 +512,7 @@
                     </div>
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">BEST MODEL</h6>
-                    </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
+                    </div>                    
                 </div>
                 <div class="col-md-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                     <div class="d-flex justify-content-center">
@@ -458,13 +522,7 @@
                     </div>
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">PROFESSIONAL PHOTO SHOTS</h6>
-                    </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
+                    </div> 
                 </div>
                 <div class="col-md-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                     <div class="d-flex justify-content-center">
@@ -475,12 +533,6 @@
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">SPECIAL EVENTS</h6>
                     </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
                 </div>
                 <div class="col-md-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                     <div class="d-flex justify-content-center">
@@ -491,12 +543,6 @@
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">FASHION SHOWS</h6>
                     </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
                 </div>
             </div>
        </div>
@@ -505,11 +551,17 @@
        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center pt-5">
-                        <h3 style="font-weight: 800;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">OUR TECHNITIONS</h3>
+                    <div class="pt-5">
+                        <h3 class="text-center" style="font-weight: 800;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">OUR  TECHNICIANS</h3>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-                        <p class="text-center text-muted" style="padding-top:30px;">orem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet.</p>
+                        <p id="talent-1" class="" style="padding-top:30px;">
+                           Media Technician oversees the use of various media equipment, including video, film, photographic and audio equipment. 
+                           They may oversee or operate highly technical or complex equipment, such as multi-media and computer projection equipment. 
+                           Each day, a technician spends time tackling different tasks, depending on the issue, such as analyzing problems, running tests, and repairing equipment. 
+                           Technicians play an essential role across various industries, providing necessary labor to keep the public safe, entertained, connected, and healthy.
+                           A technician should possess self-discipline, problem-solving skills, attention to detail, great communication skills, and a passion for technology.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -547,7 +599,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center pt-2" id="ad">
-                        <h3 style="font-weight:800;padding-top:30px;color:white;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">SHINESTARZ ADVERTISEMENT</h3>
+                        <h3 style="font-weight:800;padding-top:30px;color:white;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">DREAMSTARZ ADVERTISEMENT</h3>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
                     </div>
@@ -563,13 +615,7 @@
                     </div>
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">Directories</h6>
-                    </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
+                    </div>   
                 </div>
                 <div class="col-md-3" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                     <div class="d-flex justify-content-center">
@@ -580,12 +626,6 @@
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">Posters Desgins</h6>
                     </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
                 </div>
                 <div class="col-md-3" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <div class="d-flex justify-content-center">
@@ -595,13 +635,7 @@
                     </div>
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">Advertisement Content</h6>
-                    </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
+                    </div>   
                 </div>
                 <div class="col-md-3" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                     <div class="d-flex justify-content-center">
@@ -612,53 +646,6 @@
                     <div class="d-flex justify-content-center" id="padding-1">
                         <h6 class="text-white font-weight-bold">Advertisement Artist</h6>
                     </div>
-                    <div class="d-flex justify-content-center" id="padding-1">
-                        <p class="text-muted text-center" style="font-size:13px;">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-       </div>
-   </section>
-   <section id="clients">
-       <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center pt-5">
-                        <h3 style="font-weight: 800;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">OUR OLDAGE MEMBERS</h3>
-                        <div class="line-1"></div>
-                        <div class="line-2"></div>
-                        <p class="text-center text-muted" style="padding-top:30px;">orem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-top:50px;">
-                <div class="col-md-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-                    <img src="assets/img/oldage/father.jpg" class="img-fluid" id="img-4">
-                    <div class="tech1">
-                        <h6 class="text-center font--5" >Father</h6>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-                    <img src="assets/img/oldage/mother.jpg" class="img-fluid" id="img-4">
-                    <div class="tech1">
-                        <h6 class="text-center font--5">Mother</h6>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-                    <img src="assets/img/oldage/grand-father.jpg" class="img-fluid" id="img-4">
-                    <div class="tech1">
-                        <h6 class="text-center font--5">GrandFather</h6>
-                    </div>
-                </div>
-                <div class="col-md-3"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-                    <img src="assets/img/oldage/grand-mother.jpg" class="img-fluid" id="img-4">
-                    <div class="tech1">
-                        <h6 class="text-center font--5">GrandMother</h6>
-                    </div>
                 </div>
             </div>
        </div>
@@ -667,7 +654,6 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--Popper Js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

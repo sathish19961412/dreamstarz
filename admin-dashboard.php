@@ -46,6 +46,7 @@
      <!--DataTables Use Excel,Pdf Libirary-->
      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/r/dt/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,af-2.0.0,b-1.0.3,b-colvis-1.0.3,b-html5-1.0.3,b-print-1.0.3,se-1.0.1/datatables.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
     <!--Custom Paganation -->
     <title>shinestarz | Admin</title>
   </head>
@@ -206,6 +207,7 @@
                     </div>
                     <div class="text-center pt-5">
                         <h3 style="font-weight: 800;color:#ff5b00;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">Hello, <?php echo $_SESSION['name']; ?></h3>
+
                         <div class="line-1"></div>
                         <div class="line-2"></div>
                     </div>
@@ -255,8 +257,13 @@
                                             </div>
                                         </div>
                         </div>
-                      
-                        <table id="example" class="table table-striped table-responsive" >
+                        <div class="d-flex mt-5 mb-3">
+                            <a href="admin_permission_view.php" style="text-decoration:none;" class="bg-danger text-white font-weight-bold p-1">Admin Permission</a>
+                        </div>
+                        <div class="d-flex  mb-3">
+                            <button onclick="ExportToExcel('xlsx')" class="bg-success text-white font-weight-bold p-1">Export table to excel</button>
+                        </div>
+                        <table id="tbl_exporttable_to_xls" class="table table-striped table-responsive example" >
                                                             <thead>
                                                                 <tr>
                                                                     <th>SNO</th>
@@ -298,6 +305,7 @@
                                                                             $facebooklink=$row['facebooklink'];
                                                                             $instagramlink=$row['instagramlink'];
                                                             ?>
+                                                                   
                                                                     <td class="td-questionlist ">
                                                                         <div>
                                                                             <h6>
@@ -416,14 +424,49 @@
         </div>
     </section>
 
-    <?php include_once "footer.php"; ?>
- 
+<script >
+$( document ).ready(function() {
+    $('.example').DataTable({
+            "processing": true,
+            "sAjaxSource":"response.php",
+            "dom": 'lBfrtip',
+            "buttons": [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                    checkbox:
+                    [
+                        
+                    ]
+                }
+            ]
+            });
+});
+</script>
 
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
+ 
+<script>
+
+function ExportToExcel(type, fn, dl) {
+    var elt = document.getElementById('tbl_exporttable_to_xls');
+    var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+    return dl ?
+        XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+        XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
+}
+
+</script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Datatable JS -->
-<!-- <script src="assets/DataTables/datatables.min.js"></script> -->
+<script src="assets/DataTables/datatables.min.js"></script>
 <!--Popper Js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
@@ -435,12 +478,10 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
      $(document).ready(function() {
-            $('#example').DataTable();
+            $('.example').DataTable();
         } );
 </script>
-<script>
-    AOS.init();
-</script>
+
 <script>
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
@@ -601,7 +642,7 @@ function filterList(value) {
 		});
 	}
 }
-</script> -->
+</script> 
 </body>
 </html>
 

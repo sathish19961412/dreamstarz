@@ -22,8 +22,8 @@ $query= mysqli_query($conn, "SELECT * FROM admin_oldage_insertion WHERE id=$id")
     <!--BootNavbar CSS-->
     <link rel="stylesheet" href="css/bootnavbar.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!--Medeia Scrren-->
-    <link rel="stylesheet" media="screen" href="assets/css/media.css">
+     <!--Medeia Scrren-->
+     <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
     <!--Aos animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--custom css-->
@@ -413,7 +413,6 @@ $query= mysqli_query($conn, "SELECT * FROM admin_oldage_insertion WHERE id=$id")
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--Popper Js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

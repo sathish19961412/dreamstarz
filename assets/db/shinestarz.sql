@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2022 at 12:29 PM
+-- Generation Time: Nov 09, 2022 at 07:48 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -68,8 +68,7 @@ CREATE TABLE `admin_artist_insertion` (
 --
 
 INSERT INTO `admin_artist_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `country`, `mobile`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
-(4, 'sathish', '25', 'Artist', 'Male', 'sathish@gmail.com', '101', '7975657657', '3683', '  35', 'model.jpeg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4'),
-(5, 'anbu', '40', 'Technitions', 'Male', 'anbu@gmail.com', '101', '7678674564', '3683', '  35', 'model-1.jpg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4');
+(6, 'kiruthika', '24', 'Womens', 'Female', 'kiruthika@gmail.com', 'India', '897856754', 'Coimbatore', '  Tamilnadu', 'model-5.jpg', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -93,6 +92,13 @@ CREATE TABLE `admin_kids_insertion` (
   `facebooklink` varchar(250) NOT NULL,
   `instagramlink` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin_kids_insertion`
+--
+
+INSERT INTO `admin_kids_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
+(1, 'kiruthika', '24', 'Womens', 'Female', 'kiruthika@gmail.com', '897856754', 0, 'Coimbatore', '  Tamilnadu', 'model-5.jpg', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -122,7 +128,7 @@ CREATE TABLE `admin_mens_insertion` (
 --
 
 INSERT INTO `admin_mens_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
-(1, 'sathish', '25', 'Artist', 'Male', 'sathish@gmail.com', '7975657657', '101', '3683', '  35', 'model.jpeg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4');
+(3, 'mathew', '25', 'Technitions', 'Male', 'mathew@gmail.com', '7658678687', 'India', 'Coimbatore', '  Tamilnadu', 'model-1.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0');
 
 -- --------------------------------------------------------
 
@@ -147,6 +153,13 @@ CREATE TABLE `admin_models_insertion` (
   `instagramlink` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `admin_models_insertion`
+--
+
+INSERT INTO `admin_models_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
+(1, 'priya', '30', 'Choose...', 'Female', 'priya@gmail.com', '7675678658', '', '3683', '  35', 'model-6.jpg', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -169,6 +182,15 @@ CREATE TABLE `admin_oldage_insertion` (
   `facebooklink` varchar(250) NOT NULL,
   `instagramlink` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin_oldage_insertion`
+--
+
+INSERT INTO `admin_oldage_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
+(1, 'anbu', '40', 'Technitions', 'Male', 'anbu@gmail.com', '7678674564', '', '3683', '  35', 'model-1.jpg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4'),
+(2, 'mathew', '25', 'Artist', 'Male', 'mathew@gmail.com', '7658787897', '', '11512', '  746', 'model.jpeg', '', '', ''),
+(3, 'ramaya', '26', 'Models', 'Female', 'ramaya@gmail.com', '8678576587', '', '6953', '  286', 'model-3.jpg', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -198,7 +220,7 @@ CREATE TABLE `admin_technitions_insertion` (
 --
 
 INSERT INTO `admin_technitions_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
-(1, 'sathish', '25', 'Artist', 'Male', 'sathish@gmail.com', '7975657657', '101', '3683', '  35', 'model.jpeg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4');
+(3, 'mathew', '25', 'Technitions', 'Male', 'mathew@gmail.com', '7658678687', 'India', 'Coimbatore', '  Tamilnadu', 'model-1.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0');
 
 -- --------------------------------------------------------
 
@@ -222,6 +244,15 @@ CREATE TABLE `admin_womens_insertion` (
   `facebooklink` varchar(250) NOT NULL,
   `instagramlink` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin_womens_insertion`
+--
+
+INSERT INTO `admin_womens_insertion` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
+(2, 'kiruthika', '24', 'Technitions', 'Female', 'kiruthika@gmail.com', '7868767857', '', 'Coimbatore', '  Tamilnadu', 'model-3.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0'),
+(3, 'ramaya', '25', 'Womens', 'Female', 'ramaya@gmail.com', '6758689678', '', 'Coimbatore', '  Tamilnadu', 'model-7.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0'),
+(4, 'Ammu', '24', 'Womens', 'Female', 'ammu@gmail.com', '5476587676', '', 'Coimbatore', '  Tamilnadu', 'model-6.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0');
 
 -- --------------------------------------------------------
 
@@ -53010,8 +53041,11 @@ CREATE TABLE `registeration` (
 --
 
 INSERT INTO `registeration` (`id`, `name`, `age`, `members`, `gender`, `email`, `mobile`, `country`, `city`, `state`, `photo`, `youtubelink`, `facebooklink`, `instagramlink`) VALUES
-(2, 'sathish', '25', 'Artist', 'Male', 'sathish@gmail.com', '7975657657', '101', '3683', ' 35', 'model.jpeg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4'),
-(4, 'anbu', '40', 'Technitions', 'Male', 'anbu@gmail.com', '7678674564', '101', '3683', ' 35', 'model-1.jpg', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4', 'https://www.youtube.com/watch?v=uI_LidAnzz4');
+(10, 'raj', '25', 'Artist', 'Male', 'raj@gmail.com', '7868978968', 'Tamilnadu', 'Coimbatore', ' Tamilnadu', 'model-1.jpg', 'https://www.youtube.com/watch?v=zuVV9Y55gvc', 'https://www.youtube.com/watch?v=zuVV9Y55gvc', 'https://www.youtube.com/watch?v=zuVV9Y55gvc'),
+(11, 'mathew', '25', 'Technitions', 'Male', 'mathew@gmail.com', '7658678687', 'India', 'Coimbatore', ' Tamilnadu', 'model-1.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0'),
+(12, 'kiruthika', '24', 'Technitions', 'Female', 'kiruthika@gmail.com', '7868767857', 'India', 'Coimbatore', ' Tamilnadu', 'model-3.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0'),
+(13, 'ramaya', '25', 'Womens', 'Female', 'ramaya@gmail.com', '6758689678', 'India', 'Coimbatore', ' Tamilnadu', 'model-7.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0'),
+(14, 'Ammu', '24', 'Womens', 'Female', 'ammu@gmail.com', '5476587676', 'India', 'Coimbatore', ' Tamilnadu', 'model-6.jpg', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0', 'https://www.youtube.com/watch?v=x2rPqcMmWc0');
 
 --
 -- Indexes for dumped tables
@@ -53091,43 +53125,43 @@ ALTER TABLE `registeration`
 -- AUTO_INCREMENT for table `admin_artist_insertion`
 --
 ALTER TABLE `admin_artist_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `admin_kids_insertion`
 --
 ALTER TABLE `admin_kids_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `admin_mens_insertion`
 --
 ALTER TABLE `admin_mens_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `admin_models_insertion`
 --
 ALTER TABLE `admin_models_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `admin_oldage_insertion`
 --
 ALTER TABLE `admin_oldage_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `admin_technitions_insertion`
 --
 ALTER TABLE `admin_technitions_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `admin_womens_insertion`
 --
 ALTER TABLE `admin_womens_insertion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `bird_cities`
@@ -53151,7 +53185,7 @@ ALTER TABLE `bird_states`
 -- AUTO_INCREMENT for table `registeration`
 --
 ALTER TABLE `registeration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
