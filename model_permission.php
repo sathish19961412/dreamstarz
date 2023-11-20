@@ -133,11 +133,12 @@
     }
     #artist
     {
-        background:url("assets/banner/models.gif");
+        background:url('./assets/img/banner-comman.gif');
         background-size: cover;
         background-position: center;
         background-repeat:no-repeat;
-        height: 30vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
  /*Paganition*/
  .pagination {
@@ -196,24 +197,14 @@
        <div class="container">
            <div class="row">
                 <div class="col-md-12">
-
+                    <div class="d-flex justify-content-center mt-4">
+                       <h3 class="text-white" id="font-heading">models</h3>
+                    </div>
                 </div>
            </div>
        </div>
    </section>
-   <section>
-       <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center pt-5">
-                        <h3 style="font-weight: 800;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">Models</h3>
-                        <div class="line-1"></div>
-                        <div class="line-2"></div>
-                    </div>
-                </div>
-            </div>
-       </div>
-   </section>
+
    <section class="artist-2">
        <div class="container">
            <div class="row">
@@ -248,9 +239,78 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 p-3">
-                                    <!-- <div class="d-flex">
-                                        <span class="text-muted">MBBS, MS</span>
-                                    </div> -->
+                                <div class="modal fade" id="edit<?php echo $row['id']?>" aria-hidden="true">
+                                                                                <div class="modal-dialog">
+                                                                                    <div class="modal-content">
+                                                                                        <form method="POST" enctype="multipart/form-data" action="models_edit.php">
+                                                                                            <div class="modal-header">
+                                                                                                <h3 class="modal-title">Edit User</h3>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                <div class="col-md-2"></div>
+                                                                                                <div class="col-md-8">
+																									
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Name</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['name']?>" name="name" required="required"/>
+                                                                                                    </div>
+                                                                                                 
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Age</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['age']?>" name="age" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Members</label>
+                                                                                                        <input type="hidden" value="<?php echo $row['id']?>" name="id"/>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['members']?>" name="members" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Gender</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['gender']?>" name="gender" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Email</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['email']?>" name="email" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Mobile</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['mobile']?>" name="mobile" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Country</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['country']?>" name="country" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>City</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['city']?>" name="city" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>State</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['state']?>" name="state" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Youtubelink</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['youtubelink']?>" name="youtubelink" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Facebooklink</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['facebooklink']?>" name="facebooklink" required="required"/>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <label>Instagramlink</label>
+                                                                                                        <input type="text" class="form-control" value="<?php echo $row['instagramlink']?>" name="instagramlink" required="required"/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <br style="clear:both;"/>
+                                                                                            <div class="modal-footer">
+                                                                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
+                                                                                                <button class="btn btn-warning" name="edit"><span class="glyphicon glyphicon-save"></span> Update</button>
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+                                    </div>	
                                     <div class="d-flex">
                                         <h5>
                                             <?php echo $name; ?>
@@ -299,7 +359,8 @@
                                 <div class="col-md-3">
                                     <div class="pt-5">
                                     <p>
-                                    <a href="model_delete.php?id=<?php echo $row['id'];?>"  class="btn btn-danger text-white font-weight-bold" onclick="return confirm('Are you sure you want to delete this item?');">DELETE</a>
+                                    <a href="model_delete.php?id=<?php echo $row['id'];?>"  class="btn btn-danger text-white font-weight-bold" onclick="return confirm('Are you sure you want to delete this item?');">Model DELETE</a>
+                                    <button type="button" class="btn btn-success mt-3" data-toggle="modal" data-target="#edit<?php echo $row['id']?>"><span class="glyphicon glyphicon-edit"></span> Update</button></td>
                                     </p>
                                     </div>
                                 </div>

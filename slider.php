@@ -8,7 +8,7 @@
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
 <!-- Scroll Reveal-->
-<script src="https://unpkg.com/scrollreveal"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- AOS SCRIPT-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap4 Css-->
@@ -17,7 +17,7 @@
   <style>
     .banner--0
     {
-      height:55vh;
+      height:64vh;
     }
      .banner-1
      {
@@ -28,44 +28,21 @@
      }
      .banner-2
      {
-       background:url('assets/img/banner/actress.jpg');
+       background:url('assets/img/banner/youtube.jpg');
        background-size:cover;
        background-position:center;
        background-repeat: no-repeat;
      
      }
-     .banner-3
-     {
-       background:url('assets/img/banner/banner-2.png');
-       background-size:cover;
-       background-position:center;
-       background-repeat: no-repeat;
-      
-     }
      .banner-4
      {
-       background:url('assets/img/banner/banner-3.png');
-       background-size:cover;
-       background-position:center;
-       background-repeat: no-repeat;
-       
-     }
-     .banner-5
-     {
-       background:url('assets/img/banner/banner-4.png');
+       background:url('assets/img/banner/kids.jpg');
        background-size:cover;
        background-position:center;
        background-repeat: no-repeat;
       
      }
-     .banner-6
-     {
-       background:url('assets/img/banner/banner-5.png');
-       background-size:cover;
-       background-position:center;
-       background-repeat: no-repeat;
-      
-     }
+  
      .banner-7
      {
        background:url('assets/img/banner/banner-6.png');
@@ -74,19 +51,23 @@
        background-repeat: no-repeat;
        
      }
-     .banner-8
+
+     .banner-8 
      {
-       background:url('assets/img/banner/banner-8.png');
+       background:url('assets/img/banner/banner8.jpg');
        background-size:cover;
        background-position:center;
        background-repeat: no-repeat;
+       
      }
+
      .banner-9
      {
-       background:url('assets/img/banner/banner-9.png');
+       background:url('assets/img/banner/models.jpg');
        background-size:cover;
        background-position:center;
        background-repeat: no-repeat;
+       
      }
   </style>
 <body>
@@ -95,29 +76,25 @@
     <div class="carousel-item  active banner-1 banner--0">
       
     </div>
-    <div class="carousel-item banner-9 banner--0">
-      
-    </div> <div class="carousel-item banner-2 banner--0   ">
-     
-    </div>
-    <div class="carousel-item  banner-8 banner--0">
-      
-    </div>
-    <div class="carousel-item banner-3 banner--0">
+    <div class="carousel-item banner-2 banner--0">
     
     </div>
+
     <div class="carousel-item banner-4 banner--0">
     
     </div>
-    <div class="carousel-item banner-5 banner--0">
-    
-    </div>
-    <div class="carousel-item banner-6 banner--0">
-    
-    </div>
+
     <div class="carousel-item banner-7 banner--0">
     
     </div>
+    <div class="carousel-item banner-8 banner--0">
+    
+    </div>
+
+    <div class="carousel-item banner-9 banner--0">
+    
+    </div>
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

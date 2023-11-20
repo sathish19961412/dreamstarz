@@ -1,17 +1,9 @@
 
 <?php
-include "server.php";
-include_once "Common.php";
-$common = new Common();
-$allCountries = $common->getCountries($conn);
-?>
-
-<?php
 include_once 'server.php'; 
 
 if(isset($_POST['submit']))
 {
-   
     $name=$_POST['name'];
     $age=$_POST['age'];
     $members=$_POST['members'];
@@ -27,12 +19,12 @@ if(isset($_POST['submit']))
     //$photo=$_POST['photo'];
     $file=$_FILES['file']['name'];          
     $tmp_name=$_FILES['file']['tmp_name'];
+
     $target_dir="assets/upload/".$file;         
           if(move_uploaded_file($tmp_name,$target_dir))
           {
             echo "";
           }  
-
 
     $sqlinsert = "INSERT INTO registeration (name,age,members,gender,email,mobile,country,city,state,photo,youtubelink,facebooklink,instagramlink) 
                   VALUES ('$name', '$age','$members','$gender','$email','$mobile','$country','$city',' $state','$file','$youtubelink','$facebooklink','$instagramlink')";
@@ -40,14 +32,7 @@ if(isset($_POST['submit']))
     mysqli_query($conn, $sqlinsert);
 
     echo "<script>window.location.href='index.php';</script>";
-        
-    if($sqlinsert)
-    {
-        echo '<script type="text/javascript">';
-        echo '<script>window.alert("Successfully Registered");</script>';
-        echo '</script>';
-    }
-     
+  
 
 }
 

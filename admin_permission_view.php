@@ -168,7 +168,7 @@
                     <div class="card" style="width: 12rem;">
                         <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <a href="artist_permission.php" class="btn btn-danger font-weight-bold">Artist DELETE</a>
+                            <a href="artist_permission.php" class="btn btn-danger font-weight-bold">Artist</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,23 @@
                     <div class="card" style="width: 12rem;">
                         <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <a href="tech_permission.php" class="btn btn-danger font-weight-bold">TECH DELETE</a>
+                            <a href="tech_permission.php" class="btn btn-danger font-weight-bold">TECH</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="kids_permission.php" class="btn btn-danger font-weight-bold">Kids</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="model_permission.php" class="btn btn-danger font-weight-bold">Model</a>
                         </div>
                     </div>
                 </div>
@@ -184,44 +200,38 @@
                    <div class="card" style="width: 12rem;">
                         <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <a href="men_permission.php" class="btn btn-danger font-weight-bold">MENS DELETE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 12rem;">
-                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="women_permission.php" class="btn btn-danger font-weight-bold">Womens DELETE</a>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="col-md-3 mt-3">
-                    <div class="card" style="width: 12rem;">
-                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="kids_permission.php" class="btn btn-danger font-weight-bold">Kids DELETE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <div class="card" style="width: 12rem;">
-                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="oldage_permission.php" class="btn btn-danger font-weight-bold">Oldage DELETE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <div class="card" style="width: 12rem;">
-                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="model_permission.php" class="btn btn-danger font-weight-bold">Model DELETE</a>
+                            <a href="vj_rj_permission.php" class="btn btn-danger font-weight-bold">Vj/Rj </a>
                         </div>
                     </div>
                 </div>
               
+               
+                <div class="col-md-3 mt-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="content_permission.php" class="btn btn-danger font-weight-bold">Content </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-3 mt-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="memes_permission.php" class="btn btn-danger font-weight-bold">Memes</a>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-md-3 mt-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="assets/img/images/model.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="youtubers_permisssion.php" class="btn btn-danger font-weight-bold">Youtubers </a>
+                        </div>
+                    </div>
+                </div>
             </div>
        </div>
    </section>

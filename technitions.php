@@ -1,10 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <title>cinema technicians, tv technicians, india</title>
+    <meta name="description" content="dream starz media is the leading media entertainment website for current talent hunts for tamil cinema industry, tamilcinema technicians, tv technicians, sortfilmcinema technicians stars, trailers, videos, worldwide no.1 talent search website."/>
+    <meta name="identifier" content="https://www.dreamstarz.in/"/>
+    <meta name="keywords" content=" cinema technicians, tv technicians, camera man, you tube camera man, video editor, sound engineer, recording studio, wedding camera man, mobile camera mantamil talent hunt,  tamil songs, tamil actress, tamil movie, tamil cine stars, tamil movie online, sort film, mems creators, content creators, you tubers, cine technicians, kids artist, video jocky (vj), radio jocky (rj), "/>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="msvalidate.01" content="C4BF701DAD3437BAE22DC5BCB45DC6C0" />
+    <meta name="author" content="dreamstarz">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Tamilnadu, Chennai, Bengaluru, Karnataka, India">
+    <meta name="geo.position" content="12.955957; 77.637471">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="search engines" content="ALL"/>
+    <meta name="Author" content="dreamstarz.in"/>
+    <meta name="copyright" content="dreamstarz.in" />
+    <meta name="email" content="info@dreamstarz.in" />
+    <meta name="Robots" content="INDEX,FOLLOW"/>
+    <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+    <meta name="msnbot" content="INDEX, FOLLOW"/>
+    <meta name="googlebot" content="INDEX, FOLLOW"/>
+    <meta name="language" content="english"/>
+    <meta name="Expires" content="never"/>
+    <meta name="revisit-after" content="Daily"/>
+    <meta name="Distribution" content="Global"/>
+    <meta name="Rating" content="general"/>
+    <meta name="region" content="India"/>
+    <link rel="shortcut icon" href="./assets/img/logo.jpg" type="icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Bootstrap-->
@@ -30,7 +55,7 @@
     <!--Animate CSS-->
     <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>shinestarz | artist</title>
+    <!-- google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=g-s9t0h4wqsq"></script><script>window.datalayer = window.datalayer || []; function gtag(){datalayer.push(arguments);} gtag('js', new date()); gtag('config', 'g-s9t0h4wqsq'); </script>
   </head>
   <style>
     #padding-1
@@ -133,11 +158,12 @@
     }
     #artist
     {
-        background:url("assets/banner/tech.gif");
+        background:url('./assets/img/banner-comman.gif');
         background-size: cover;
         background-position: center;
         background-repeat:no-repeat;
-        height: 30vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
      /*Paganition*/
  .pagination {
@@ -211,7 +237,9 @@
        <div class="container">
            <div class="row">
                 <div class="col-md-12">
-
+                    <div class="d-flex justify-content-center mt-4">
+                       <h3 class="text-white" id="font-heading">Technitions</h3>
+                    </div>
                 </div>
            </div>
        </div>
@@ -259,62 +287,104 @@
                             <div class="row row-5" id="art" >
                                 <div class="col-md-3">
                                     <div class="artist-1">
-                                        <img src="assets/upload/<?php echo $row['photo']; ?>"  class="img-fluid">
+                                        <img src="assets/upload/<?php echo $row['photo']; ?>"  class="img-fluid-1">
                                     </div>
                                 </div>
-                                <div class="col-md-6 p-3">
-                                    <!-- <div class="d-flex">
-                                        <span class="text-muted">MBBS, MS</span>
-                                    </div> -->
-                                    <div class="d-flex">
-                                        <h5>
-                                            <?php echo $name; ?>
-                                        </h5>
-                                    </div>
-                                    <!-- <div class="d-flex">
-                                        <span class="text-muted">Fee: Rs.350</span>
-                                    </div> -->
-                                    <div class="d-flex pt-2">
-                                        <p><img src="assets/img/verified.png" class="img-fluid"><span class="span-1">Gender:<?php echo $gender;?></span></p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <p><span class="span-1">Rating:</span> <img src="assets/img/rating.png" class="img-fluid"> <span class="text-muted muted-1">10 Vote(s)</span></p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Age </span>  <span class="muted-3">  <span class="muted-4"> <?php echo $age; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Members</span>  <span class="muted-2"> <?php echo $members; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Mobile</span>  <span class="muted-3"> <?php echo $mobile; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Country</span> <span class="muted-4"><?php echo $country; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">City</span> <span class="muted-4"><?php echo $city; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">State</span> <span class="muted-4"><?php echo $state; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Youtube Link</span> <span class="muted-4"><?php echo $youtubelink; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Facebook Link</span> <span class="muted-4"><?php echo $facebooklink; ?></span>
-                                    </div>
-                                    <div class="d-flex">
-                                        <span class="span-2">Instgram Link</span> <span class="muted-4"><?php echo $instagramlink; ?></span>
-                                    </div>
+                                <div class="col-md-9">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="d-flex">
+                                                        <h5 class="username">
+                                                            <?php echo $name; ?>
+                                                        </h5>
+                                                    </div>       
+                                                </th>
+                                                <td>
+                                                  <div class="d-flex">
+                                                     <p><span class="span-1"><?php echo $gender;?></span></p>
+                                                  </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="d-flex">
+                                                        <span class="span-2">Age:</span>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="d-flex">
+                                                       <span  class="span-2" id="space-around"><?php echo $age; ?></span>
+                                                    </div>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="d-flex">
+                                                      <span class="span-2">Members:</span> 
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="d-flex">
+                                                      <span  class="span-2" id="space-around"><?php echo $members; ?></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="d-flex">
+                                                        <span class="span-2">Mobile:</span> 
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="d-flex">
+                                                       <span class="span-2" id="space-around">+91xxxxxxxxxx</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">          
+                                                    <div class="d-flex">
+                                                        <span class="span-2">Country:</span> 
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="d-flex">
+                                                       <span class="span-2" id="space-around"><?php echo $country; ?></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">          
+                                                    <div class="d-flex">
+                                                       <span class="span-2">City:</span> 
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="d-flex">
+                                                       <span class="span-2" id="space-around"><?php echo $city; ?></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">          
+                                                    <div class="d-flex">
+                                                      <span class="span-2"> <a href="<?php echo $youtubelink; ?>"><img src="./assets/img/youtube.png" class="img-fluid-14"/></a> | <a href="<?php echo $facebooklink; ?>"><img src="./assets/img/facebook.png" class="img-fluid-14"/></a> | <a href="<?php echo $instagramlink; ?>"><img src="./assets/img/instagram.png" class="img-fluid-14"/></a> </span> 
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="col-md-3">
+                                <!-- <div class="col-md-3">
                                     <div class="pt-5">
                                     <p>
-                                    <a href="technitions_view.php?view=<?php echo $row['id'];?>" class="btn btn-danger text-white font-weight-bold">VIEW</a>
+                                    <a href="technitions_view.php?view=echo $row['id'];" class="btn btn-danger text-white font-weight-bold">VIEW</a>
                                     </p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <?php    
@@ -323,19 +393,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div style="background:#28a745;border-radius: 25px;" class="appointment">
-                        <h6 class="text-white">SHARE YOUR FRIENDS</h6>
-                    </div>
-                    <div id="icon-size">
-                      <i class="fa fa-whatsapp" aria-hidden="true" ></i>
-                    </div>
-
-                    <div style="background:#0062cc;border-radius: 25px;" class="appointment mt-5">
-                        <h6 class="text-white">SHARE YOUR FRIENDS</h6>
-                    </div>
-                    <div id="icon-size1">
-                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </div>
+                 <?php include_once('slide-navitem.php'); ?>
                 </div>
            </div>
        </div>

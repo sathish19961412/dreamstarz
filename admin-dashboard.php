@@ -223,39 +223,47 @@
                         <div class="row">
                                         <div class="col">
                                             <div class="d-flex justify-content-center">
-                                                <a href="admin-artist-reg.php"><input type="submit" value="Add Artist" name="add" onclick="location.reload()" class="btn btn-info btn-sm text-white"></a>
+                                                <a href="admin-artist-reg.php"><input type="submit" value="Artist" name="add" onclick="location.reload()" class="btn btn-info btn-sm text-white"></a>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="d-flex justify-content-center">
-                                                <a href="admin-artist-reg.php"><input type="submit" value="Add Technitions" name="technitions"  onclick="location.reload()" class="btn btn-danger btn-sm text-white"></a>
+                                                <a href="admin-artist-reg.php"><input type="submit" value="Technitions" name="technitions"  onclick="location.reload()" class="btn btn-danger btn-sm text-white"></a>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="d-flex justify-content-center">
-                                                <a href="admin-artist-reg.php"><input type="submit" value="Add Mens" name="Mens"  onclick="location.reload()" class="btn btn-warning btn-sm text-white"></a>
+                                                <a href="admin-artist-reg.php"><input type="submit" value="Vj/Rj" name="vjrj"  onclick="location.reload()" class="btn btn-warning btn-sm text-white"></a>
                                             </div>
                                         </div>
+                                      
                                         <div class="col">
                                             <div class="d-flex justify-content-center">
-                                                <a href="admin-artist-reg.php"><input type="submit" value="Add Womens" name="womens" onclick="location.reload()"  class="btn btn-success btn-sm text-white"></a>
+                                                <a href="admin-artist-reg.php"><input type="submit" value="Kids" name="kids" onclick="location.reload()"  class="btn btn-primary btn-sm text-white"></a>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center">
-                                                <a href="admin-artist-reg.php"><input type="submit" value="Add Kids" name="kids" onclick="location.reload()"  class="btn btn-primary btn-sm text-white"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center">
-                                                <a href="admin-artist-reg.php"><input type="submit" value="Add Oldage" name="oldage" onclick="location.reload()"  class="btn btn-secondary btn-sm text-white"></a>
-                                            </div>
-                                        </div>
+                                      
                                         <div class="col">
                                             <div class="d-flex justify-content-center">
                                                 <a href="admin-artist-reg.php"><input type="submit" value="Models" name="models" onclick="location.reload()"  class="btn btn-success btn-sm text-white"></a>
                                             </div>
                                         </div>
+                                        <div class="col">
+                                            <div class="d-flex justify-content-center">
+                                                <a href="admin-artist-reg.php"><input type="submit" value="content creater" name="contentcreater" onclick="location.reload()"  class="btn btn-success btn-sm text-white"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex justify-content-center">
+                                                <a href="admin-artist-reg.php"><input type="submit" value="memes creater" name="memescreater" onclick="location.reload()"  class="btn btn-secondary btn-sm text-white"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex justify-content-center">
+                                                <a href="admin-artist-reg.php"><input type="submit" value="Youtubers" name="youtubers" onclick="location.reload()"  class="btn btn-secondary btn-sm text-white"></a>
+                                            </div>
+                                        </div>
+                                     
                         </div>
                         <div class="d-flex mt-5 mb-3">
                             <a href="admin_permission_view.php" style="text-decoration:none;" class="bg-danger text-white font-weight-bold p-1">Admin Permission</a>
@@ -423,7 +431,131 @@
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <form  method="POST" action="#" enctype="multipart/form-data">
+                        <div class="row">
+                            <h2>Refer Friends List</h2>
+                        </div>
+                        <div class="d-flex  mb-3">
+                            <button onclick="ExportToExcel('xlsx')" class="bg-success text-white font-weight-bold p-1">Export table to excel</button>
+                        </div>
+                        <table id="tbl_exporttable_to_xls" class="table table-striped table-responsive example" >
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>SNO</th>
+                                                                    <th>First Name</th>
+                                                                    <th>First Email</th>
+                                                                    <th>First Mobile</th>
+                                                                    <th>Second Name</th>
+                                                                    <th>Second Email</th>
+                                                                    <th>Second Mobile</th>
+                                                                    <th>Third Name</th>
+                                                                    <th>Third Email</th>
+                                                                    <th>Third Mobile</th>
+                                                                    <th>Four Name</th>
+                                                                    <th>Four Email</th>
+                                                                    <th>Four  Mobile</th>
+                                                                    <th>Five Name</th>
+                                                                    <th>Five Email</th>
+                                                                    <th>Five  Mobile</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody> 
+                                                            
+                                                            <tr>
+                                                            <?php
+                                                                    include_once 'server.php'; 
+                                                                    $query=mysqli_query($conn,"SELECT*FROM refer_friend");
+                                                                    while($row=mysqli_fetch_array($query))
+                                                                    {
+                                                                            $artistid=$row['id'];
+                                                                            $name = $row['name'];
+                                                                            $email = $row['email'];
+                                                                            $mobile = $row['mobile'];
+                                                                            $name_first=$row['name_first'];
+                                                                            $mobile_first=$row['mobile_first'];
+                                                                            $email_first=$row['email_first'];
+                                                                            $name_second=$row['name_second'];
+                                                                            $mobile_second=$row['mobile_second'];
+                                                                            $email_second=$row['email_second'];
+                                                                            $name_third=$row['name_third'];
+                                                                            $mobile_third=$row['mobile_third'];
+                                                                            $email_third=$row['email_third'];
+                                                                            $name_four=$row['name_four'];
+                                                                            $mobile_four=$row['mobile_four'];
+                                                                            $email_four=$row['email_four'];
+                                                                           
+                                                            ?>
+                                                                   
+                                                                    <td class="td-questionlist ">
+                                                                        <div>
+                                                                            <h6>
+                                                                                <?php echo $row['id']; ?> 
+                                                                                <input type="hidden" value="<?php echo $row['id']; ?>" name="id[]">
+                                                                                <!-- <input type="checkbox" value="<?php echo $row['id']; ?>" name="name[]"> -->
+                                                                            </h6>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <?php echo $row['name']; ?>
+                                                                            <input type="hidden" value="<?php echo $row['name']; ?>" name="name[]">
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <h6>
+                                                                                <?php echo $row['email']; ?> 
+                                                                                <input type="hidden" value="<?php echo $row['email']; ?>" name="email[]">
+                                                                                <!-- <input type="checkbox" value="<?php echo $row['email']; ?>" name="name[]"> -->
+                                                                            </h6>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <h6>
+                                                                                <?php echo $row['mobile']; ?> 
+                                                                                <input type="hidden" value="<?php echo $row['mobile']; ?>" name="mobile[]">
+                                                                                <!-- <input type="checkbox" value="<?php echo $row['mobile']; ?>" name="name[]"> -->
+                                                                            </h6>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <?php echo $row['name_first']; ?>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <h6>
+                                                                                <?php echo $row['email_first']; ?> 
+                                                                            </h6>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <h6>
+                                                                                <?php echo $row['mobile_first']; ?> 
+                                                                            </h6>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <?php echo $row['name_first']; ?>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <h6>
+                                                                                <?php echo $row['email_first']; ?> 
+                                                                            </h6>
+                                                                    </td>
+                                                                    <td class="td-questionlist">
+                                                                            <h6>
+                                                                                <?php echo $row['mobile_first']; ?> 
+                                                                            </h6>
+                                                                    </td>
+                                                                </tr> 
+                                                                <?php    
+                                                                    }
+                                                                ?>
+                                
+                                                            </tbody>
+                        </table>
+                        </form>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
 <script >
 $( document ).ready(function() {
     $('.example').DataTable({
@@ -651,4 +783,4 @@ function filterList(value) {
      header("Location: index.php");
      exit();
 }
- ?>
+?>

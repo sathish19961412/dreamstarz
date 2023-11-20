@@ -9,11 +9,69 @@
 }
 @media only screen and (max-width:1200px)
 {
-
+    .banner--0 
+    {
+        height: 34vh !important;
+    }
 }
-@media only screen and (max-width:992px)
+@media only screen and (max-width:1199px)
 {
-
+    .img-fluid-14 {
+        width: 23% !important;
+        height: auto;
+    }
+}
+@media only screen and (max-width:1024px)
+{
+    .navbar-light .navbar-nav .nav-link {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        color: #fff !important;
+        font-size: 10px !important;
+        font-weight: 500;
+        text-indent: 17px;
+    }
+    #free-link {
+        font-size: 12px;
+        width: 102px;
+        position: relative;
+        left: 98px !important;
+    }
+    #refer {
+        position: absolute;
+        left: 23% !important;
+        top: 23px;
+    }
+    #refer1 {
+        position: absolute;
+        left: 51% !important;
+        top: 23px;
+    }
+    #icon-14 {
+        position: relative;
+        left: 234px !important;
+    }
+}
+@media only screen and (max-width:991px)
+{
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: relative;
+        right: 11px;
+        top: 15px;
+        background: #e1c67e;
+    }
+    #refer {
+        position: absolute;
+        left: 6% !important;
+        top: 85px !important;
+    }
+    #free-link {
+        font-size: 12px;
+        width: 102px;
+        position: relative;
+        left:171px !important;
+    }
 }
 @media only screen and (max-width:767px)
 {
@@ -21,6 +79,38 @@
     {
         position: relative;
         left:0px !important;
+    }
+    .img-fluid-1
+    {
+        max-width:100% !important;
+        height: auto !important;
+    }
+    #logo-fontfamilly1 {
+        max-width: 100% !important;
+        height: auto;
+        position: relative;
+        top: 2px;
+    }
+    #logo-fontfamilly1 {
+        font-family: 'Bebas Neue', cursive;
+        position: relative;
+        /* top: 22px; */
+        left: 46px !important;
+    }
+    #contact-hide{
+        display: none;
+    }
+    #free-link {
+        font-size: 12px;
+        width: 102px;
+        position: relative;
+        left: 131px !important;
+    }
+    #free-link2 {
+        font-size: 12px;
+        width: 114px;
+        position: relative;
+        left: 11px !important;
     }
     .banner--0 
     {
@@ -35,6 +125,21 @@
         position: relative;
         top: 20px;
         right: 55px;
+    }
+    #main_navbar {
+        margin-top: -14px !important;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: relative;
+        left: 286px;
+        top: 7px;
+        background: #e1c67e;
+    }
+    #refer {
+        position: absolute;
+        left: 6% !important;
+        top: 75px !important;
     }
     .navbar-light .navbar-toggler
     {
@@ -88,7 +193,7 @@
     {
         position: absolute;
         bottom: 15px !important;
-        left: 229px !important;
+        left: 174px !important;
         width: 126px !important;
         background: #ff5b00b8;
         padding-top: 6px !important;
@@ -126,7 +231,8 @@
     {
         position: relative;
         left: -29px;
-        top: 25px;
+        top: 46px;
+        padding-bottom: 27px;
     }
     address {
         margin-bottom: 0rem !important;
@@ -138,13 +244,12 @@
     {
         padding-top:0px;
     }
-    #artist 
-    {
+    #artist {
         background: url(assets/banner/tech.gif);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 11vh !important;
+        height: 18vh !important;
     }
     .appointment
     {
@@ -163,5 +268,305 @@
         left: 25px;
         top: 141px !important;
         color: #ffffff;
+    }
+}
+@media only screen and (max-width:425px)
+{
+    #free-link {
+        font-size: 11px !important;
+        width: 101px !important;
+        position: relative;
+        left: 97px !important;
+    }
+}
+@media only screen and (max-width:480px){
+    #logo-fontfamilly1 {
+        max-width: 224px !important;
+        height: auto;
+        position: relative;
+        top: 2px !important;
+        left: -4px !important;
+    }
+    h3 {
+        font-size: 1.25rem !important;
+      }
+      #footer-2 {
+        position: relative;
+        left: 14px;
+        top: 34px;
+    }
+    #footer-1 {
+        position: relative;
+        left: -12px;
+        top: 13px;
+    }
+    .line-1 {
+        background: #ff5b00;
+        width: 163px;
+        height: 3px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        left: 24% !important;
+    }
+    #logo-fontfamilly {
+        max-width: 100% !important;
+        height: auto;
+        top: 45px !important;
+    }
+    #services {
+        margin-top: 60px;
+        background-color: #151515;
+        background-image: url(assets/img/ppstern2.jpg);
+        background-repeat: repeat;
+        padding:0px !important;
+    }
+    #free-link {
+        font-size: 11px !important;
+        width: 101px !important;
+        position: relative;
+        left: 118px !important;
+    }
+    #free-link1 {
+        font-size: 11px !important;
+        width: 112px !important;
+    }
+    #free-link2 {
+        font-size: 12px;
+        width: 114px;
+        position: relative;
+        left: 10px !important;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: relative;
+        left: 239px;
+        top: 7px;
+        background: #e1c67e;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width:425px){
+    #logo-fontfamilly1 {
+        max-width: 224px !important;
+        height: auto;
+        position: relative;
+        top: 2px !important;
+        left: -4px !important;
+    }
+    h3 {
+        font-size: 1.25rem !important;
+      }
+      #footer-2 {
+        position: relative;
+        left: 14px;
+        top: 34px;
+    }
+    #refer {
+        position: absolute;
+        left: -5% !important;
+        top: 68px !important;
+    }
+    #footer-1 {
+        position: relative;
+        left: -12px;
+        top: 13px;
+    }
+    .line-1 {
+        background: #ff5b00;
+        width: 163px;
+        height: 3px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        left: 24% !important;
+    }
+    #logo-fontfamilly {
+        max-width: 100% !important;
+        height: auto;
+        top: 45px !important;
+    }
+    #services {
+        margin-top: 60px;
+        background-color: #151515;
+        background-image: url(assets/img/ppstern2.jpg);
+        background-repeat: repeat;
+        padding:0px !important;
+    }
+    #free-link {
+        font-size: 11px !important;
+        width: 101px !important;
+        position: relative;
+        left: 40px !important;
+    }
+    #free-link1 {
+        font-size: 11px !important;
+        width: 112px !important;
+    }
+    #free-link2 {
+        font-size: 12px;
+        width: 114px;
+        position: relative;
+        left: 10px !important;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: relative;
+        left: 224px;
+        top: 7px;
+        background: #e1c67e;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width:375px){
+    #logo-fontfamilly1 {
+        max-width: 224px !important;
+        height: auto;
+        position: relative;
+        top: 2px !important;
+        left: -4px !important;
+    }
+    h3 {
+        font-size: 1.25rem !important;
+      }
+      #footer-2 {
+        position: relative;
+        left: 14px;
+        top: 34px;
+    }
+    #refer {
+        position: absolute;
+        left: -5% !important;
+        top: 68px !important;
+    }
+    #footer-1 {
+        position: relative;
+        left: -12px;
+        top: 13px;
+    }
+    .line-1 {
+        background: #ff5b00;
+        width: 163px;
+        height: 3px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        left: 24% !important;
+    }
+    #logo-fontfamilly {
+        max-width: 100% !important;
+        height: auto;
+        top: 45px !important;
+    }
+    #services {
+        margin-top: 60px;
+        background-color: #151515;
+        background-image: url(assets/img/ppstern2.jpg);
+        background-repeat: repeat;
+        padding:0px !important;
+    }
+    #free-link {
+        font-size: 11px !important;
+        width: 101px !important;
+        position: relative;
+        left: 40px !important;
+    }
+    #free-link1 {
+        font-size: 11px !important;
+        width: 112px !important;
+    }
+    #free-link2 {
+        font-size: 12px;
+        width: 114px;
+        position: relative;
+        left: 10px !important;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: relative;
+        left: 180px;
+        top: 7px;
+        background: #e1c67e;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width:320px){
+    #logo-fontfamilly1 {
+        max-width: 224px !important;
+        height: auto;
+        position: relative;
+        top: 2px !important;
+        left: -4px !important;
+    }
+    h3 {
+        font-size: 1.25rem !important;
+      }
+      #footer-2 {
+        position: relative;
+        left: 14px;
+        top: 34px;
+    }
+    #refer {
+        position: absolute;
+        left: -5% !important;
+        top: 68px !important;
+    }
+    #footer-1 {
+        position: relative;
+        left: -12px;
+        top: 13px;
+    }
+    .line-1 {
+        background: #ff5b00;
+        width: 163px;
+        height: 3px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        left: 24% !important;
+    }
+    #logo-fontfamilly {
+        max-width: 100% !important;
+        height: auto;
+        top: 45px !important;
+    }
+    #services {
+        margin-top: 60px;
+        background-color: #151515;
+        background-image: url(assets/img/ppstern2.jpg);
+        background-repeat: repeat;
+        padding:0px !important;
+    }
+    #free-link {
+        font-size: 11px !important;
+        width: 101px !important;
+        position: relative;
+        left: 40px !important;
+    }
+    #free-link1 {
+        font-size: 11px !important;
+        width: 112px !important;
+    }
+    #free-link2 {
+        font-size: 12px;
+        width: 114px;
+        position: relative;
+        left: 10px !important;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        position: relative;
+        left: 180px;
+        top: 7px;
+        background: #e1c67e;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }

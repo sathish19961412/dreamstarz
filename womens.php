@@ -137,7 +137,8 @@
         background-size: cover;
         background-position: center;
         background-repeat:no-repeat;
-        height: 30vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
      /*Paganition*/
  .pagination {

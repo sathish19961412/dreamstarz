@@ -4533,7 +4533,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                                     <input id="password" name="password" required="required" type="password"  autocomplete="off" placeholder="Password" /> 
                                 </p>
                                 <p class="keeplogin"> 
-									<input style="background:#12535d;" type="submit" name="submit" class="btn text-white" id="submit" value="Submit" /> 
+									<input style="background:#12535d;color: white;font-size: 16px;
+    text-align: center;" type="submit" name="submit" class="btn text-white" id="submit" value="Submit" /> 
 								</p>
                             </form>
                         </div>
